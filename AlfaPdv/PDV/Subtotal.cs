@@ -145,9 +145,9 @@ namespace AlfaPdv.PDV
                 {
                     double.TryParse(row.Cells["Preco"].Value.ToString(), out double preco);
 
-                    
+
                     total += preco;
-                    
+
 
 
                 }

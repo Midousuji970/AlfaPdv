@@ -49,6 +49,7 @@
             // 
             // pnlFina
             // 
+            pnlFina.BackColor = Color.Transparent;
             pnlFina.Controls.Add(lbTroco);
             pnlFina.Controls.Add(mtxtFina1);
             pnlFina.Controls.Add(txtFina3);
@@ -123,17 +124,19 @@
             // panel7
             // 
             panel7.BackColor = Color.FromArgb(46, 51, 73);
-            panel7.Location = new Point(1256, 0);
+            panel7.Dock = DockStyle.Right;
+            panel7.Location = new Point(1254, 10);
             panel7.Name = "panel7";
-            panel7.Size = new Size(12, 680);
+            panel7.Size = new Size(10, 661);
             panel7.TabIndex = 7;
             // 
             // panel6
             // 
             panel6.BackColor = Color.FromArgb(46, 51, 73);
-            panel6.Location = new Point(-1, 0);
+            panel6.Dock = DockStyle.Left;
+            panel6.Location = new Point(0, 10);
             panel6.Name = "panel6";
-            panel6.Size = new Size(10, 680);
+            panel6.Size = new Size(10, 661);
             panel6.TabIndex = 6;
             // 
             // panel4
@@ -141,9 +144,10 @@
             panel4.BackColor = Color.FromArgb(46, 51, 73);
             panel4.Controls.Add(panel8);
             panel4.Controls.Add(panel5);
-            panel4.Location = new Point(-7, 674);
+            panel4.Dock = DockStyle.Bottom;
+            panel4.Location = new Point(0, 671);
             panel4.Name = "panel4";
-            panel4.Size = new Size(1278, 10);
+            panel4.Size = new Size(1264, 10);
             panel4.TabIndex = 3;
             // 
             // panel8
@@ -165,9 +169,10 @@
             // 
             panel2.BackColor = Color.FromArgb(46, 51, 73);
             panel2.Controls.Add(panel3);
-            panel2.Location = new Point(-7, 0);
+            panel2.Dock = DockStyle.Top;
+            panel2.Location = new Point(0, 0);
             panel2.Name = "panel2";
-            panel2.Size = new Size(1278, 10);
+            panel2.Size = new Size(1264, 10);
             panel2.TabIndex = 2;
             // 
             // panel3
