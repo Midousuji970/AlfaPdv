@@ -144,6 +144,7 @@
             pnlSub.Controls.Add(lbTotal);
             pnlSub.Dock = DockStyle.Fill;
             pnlSub.Location = new Point(0, 0);
+            pnlSub.Margin = new Padding(50, 3, 3, 3);
             pnlSub.Name = "pnlSub";
             pnlSub.Size = new Size(1264, 681);
             pnlSub.TabIndex = 28;
@@ -167,7 +168,7 @@
             dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleRight;
             dataGridViewCellStyle2.BackColor = Color.FromArgb(200, 212, 225);
             dataGridViewCellStyle2.Font = new Font("Arial", 28F, FontStyle.Regular, GraphicsUnit.Point);
-            dataGridViewCellStyle2.ForeColor = SystemColors.ControlText;
+            dataGridViewCellStyle2.ForeColor = Color.FromArgb(46, 51, 73);
             dataGridViewCellStyle2.SelectionBackColor = Color.FromArgb(200, 212, 225);
             dataGridViewCellStyle2.SelectionForeColor = Color.FromArgb(46, 51, 73);
             dataGridViewCellStyle2.WrapMode = DataGridViewTriState.False;
@@ -181,7 +182,6 @@
             dgvPes.RowTemplate.Height = 48;
             dgvPes.Size = new Size(906, 481);
             dgvPes.TabIndex = 25;
-            dgvPes.ForeColor = Color.FromArgb(46, 51, 73);
             // 
             // pnlPdvSubTotal
             // 

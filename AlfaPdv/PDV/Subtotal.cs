@@ -138,14 +138,14 @@ namespace AlfaPdv.PDV
         {
             double total = 0;
 
-            foreach (DataGridViewRow row in dgvPes.Rows)
-            {
-                if (row.Cells["Preco"].Value != null)
-                {
-                    double.TryParse(row.Cells["Preco"].Value.ToString(), out double preco);
-                    total += preco;
-                }
-            }
+            //foreach (DataGridViewRow row in dgvPes.Rows)
+            //{
+            //    if (row.Cells["Preco"].Value != null)
+            //    {
+            //        double.TryParse(row.Cells["Preco"].Value.ToString(), out double preco);
+            //        total += preco;
+            //    }
+            //}
 
             lbTotal.Text = total.ToString("F2");
         }
@@ -160,18 +160,18 @@ namespace AlfaPdv.PDV
 
         private void CarregarProdutos(List<string> produtos)
         {
-            foreach (var produto in produtos)
-            {
-                string[] dados = produto.Split('-');
-                if (dados.Length == 3)
-                {
+            //foreach (var produto in produtos)
+            //{
+            //    string[] dados = produto.Split('-');
+            //    if (dados.Length == 3)
+            //    {
 
-                    string nome = dados[0].Trim();
-                    int quantidade = int.Parse(dados[1].Trim());
-                    double preco = double.Parse(dados[2].Trim());
-                    dgvPes.Rows.Add(nome, quantidade, preco.ToString("F2"));
-                }
-            }
+            //        string nome = dados[0].Trim();
+            //        int quantidade = int.Parse(dados[1].Trim());
+            //        double preco = double.Parse(dados[2].Trim());
+            //        dgvPes.Rows.Add(nome, quantidade, preco.ToString("F2"));
+            //    }
+            //}
             AtualizarTotal();
         }
 
@@ -182,31 +182,31 @@ namespace AlfaPdv.PDV
 
         private void FinalizarVenda()
         {
-            if (dgvPes.Rows.Count > 0)
-            {
-                List<string> produtos = new();
+            //if (dgvPes.Rows.Count > 0)
+            //{
+            //    List<string> produtos = new();
 
-                foreach (DataGridViewRow row in dgvPes.Rows)
-                {
-                    if (row.Cells["Nome"].Value != null &&
-                        row.Cells["Quantidade"].Value != null &&
-                        row.Cells["Preco"].Value != null)
-                    {
-                        string nome = row.Cells["Nome"].Value.ToString();
-                        string quantidade = row.Cells["Quantidade"].Value.ToString();
-                        string preco = row.Cells["Preco"].Value.ToString();
+            //    foreach (DataGridViewRow row in dgvPes.Rows)
+            //    {
+            //        if (row.Cells["Nome"].Value != null &&
+            //            row.Cells["Quantidade"].Value != null &&
+            //            row.Cells["Preco"].Value != null)
+            //        {
+            //            string nome = row.Cells["Nome"].Value.ToString();
+            //            string quantidade = row.Cells["Quantidade"].Value.ToString();
+            //            string preco = row.Cells["Preco"].Value.ToString();
 
-                        produtos.Add($"{nome} - {quantidade} - {preco}");
-                    }
-                }
+            //            produtos.Add($"{nome} - {quantidade} - {preco}");
+            //        }
+            //    }
 
-                Finalizacao finalizacaoForm = new(produtos, lbTotal.Text);
-                LoadFormInPanel(finalizacaoForm);
-            }
-            else
-            {
-                MessageBox.Show("Não há produtos no carrinho para finalizar a venda.");
-            }
+            //    Finalizacao finalizacaoForm = new(produtos, lbTotal.Text);
+            //    LoadFormInPanel(finalizacaoForm);
+            //}
+            //else
+            //{
+            //    MessageBox.Show("Não há produtos no carrinho para finalizar a venda.");
+            //}
         }
 
         private void LoadFormInPanel(Form form)
