@@ -41,15 +41,11 @@
             dgvPes = new DataGridView();
             pnlPdvSubTotal = new Panel();
             panel1 = new Panel();
-            panel3 = new Panel();
             panel5 = new Panel();
             panel2 = new Panel();
-            panel8 = new Panel();
             mtxtPes = new MaskedTextBox();
             pnlSub.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dgvPes).BeginInit();
-            panel1.SuspendLayout();
-            panel2.SuspendLayout();
             SuspendLayout();
             // 
             // panel7
@@ -194,19 +190,11 @@
             // panel1
             // 
             panel1.BackColor = Color.FromArgb(54, 63, 84);
-            panel1.Controls.Add(panel3);
             panel1.Dock = DockStyle.Top;
             panel1.Location = new Point(11, 0);
             panel1.Name = "panel1";
             panel1.Size = new Size(1253, 14);
             panel1.TabIndex = 23;
-            // 
-            // panel3
-            // 
-            panel3.Location = new Point(3, 4);
-            panel3.Name = "panel3";
-            panel3.Size = new Size(10, 680);
-            panel3.TabIndex = 3;
             // 
             // panel5
             // 
@@ -220,19 +208,11 @@
             // panel2
             // 
             panel2.BackColor = Color.FromArgb(54, 63, 84);
-            panel2.Controls.Add(panel8);
             panel2.Dock = DockStyle.Bottom;
             panel2.Location = new Point(0, 667);
             panel2.Name = "panel2";
             panel2.Size = new Size(1264, 14);
             panel2.TabIndex = 20;
-            // 
-            // panel8
-            // 
-            panel8.Location = new Point(3, 4);
-            panel8.Name = "panel8";
-            panel8.Size = new Size(10, 680);
-            panel8.TabIndex = 3;
             // 
             // mtxtPes
             // 
@@ -256,8 +236,6 @@
             pnlSub.ResumeLayout(false);
             pnlSub.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)dgvPes).EndInit();
-            panel1.ResumeLayout(false);
-            panel2.ResumeLayout(false);
             ResumeLayout(false);
             PerformLayout();
         }
@@ -282,10 +260,8 @@
         private Panel pnlSub;
         private MaskedTextBox mtxtPes;
         private Panel panel2;
-        private Panel panel8;
         private Panel panel5;
         private Panel panel1;
-        private Panel panel3;
         private Panel pnlPdvSubTotal;
         private TableLayoutPanel tableLayoutPanel1;
         private DataGridView dgvPes;
